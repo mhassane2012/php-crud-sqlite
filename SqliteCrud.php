@@ -77,7 +77,7 @@ EOFSQL;
 	public function selectTable($sqlcommand){
 		
 		$query = $this->query($this->heredocStringSql($sqlcommand));
-		$row = $query->fetchArray(SQLITE3_ASSOC);
+		//$row = $query->fetchArray(SQLITE3_ASSOC);
 
 		while ($row = $query->fetchArray(SQLITE3_ASSOC))
 		{
